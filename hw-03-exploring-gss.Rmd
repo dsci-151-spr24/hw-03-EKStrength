@@ -6,7 +6,7 @@ author: "Evan Kurtz"
 
 ```{r include = FALSE}
 knitr::opts_chunk$set(
-  eval = FALSE,
+  eval = TRUE,
   out.width = "80%",
   fig.asp = 0.618,
   fig.width = 10,
@@ -75,8 +75,17 @@ Answers to this question are stored in the `harass5` variable in our dataset.
 
 1.  What are the possible responses to this question and how many respondents chose each of these answers?
 
+***The possible responses are Does Not Apply, No, and Yes.***
+```{r}
+xtabs(~ harass5, gss16)
+```
+***96 people choose "Does not apply", 1136 people said "No", and 237 people said "Yes".***
+
+
 2.  What percent of the respondents for whom this question is applicable\
     (i.e. excluding `NA`s and `Does not apply`s) have been harassed by their superiors or co-workers at their job.
+    
+***1136 / 237 = 4.79, 100 / 4.79 = 20.88. So, 20.88% of respondents have been harassed at their job.***
 
 🧶 ✅ ⬆️ Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
