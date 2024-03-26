@@ -1,6 +1,7 @@
 ---
 title: "HW 03 - Exploring the GSS"
 output: html_document
+author: "Evan Kurtz"
 ---
 
 ```{r include = FALSE}
@@ -12,6 +13,7 @@ knitr::opts_chunk$set(
   dpi = 300
 )
 ```
+
 
 ```{r photo,  echo = FALSE, fig.width = 3, fig.cap = "Photo by Mauro Mora on Unsplash", eval = TRUE}
 knitr::include_graphics("img/mauro-mora-31-pOduwZGE-unsplash.jpg")
